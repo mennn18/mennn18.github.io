@@ -28,6 +28,37 @@
         localStorage.setItem("ngopi-web-theme", nextTheme);
         applyTheme(nextTheme);
       });
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileNav = document.getElementById("mobileNav");
+      function setMobileMenuOpen(isOpen) {
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Tutup menu navigasi" : "Buka menu navigasi",
+        );
+        mobileNav.classList.toggle("is-open", isOpen);
+      }
+      menuToggle.addEventListener("click", () => {
+        setMobileMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
+      });
+      mobileNav.querySelectorAll("a").forEach((link) =>
+        link.addEventListener("click", () => setMobileMenuOpen(false)),
+      );
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+          setMobileMenuOpen(false);
+          menuToggle.focus();
+        }
+      });
+      document.addEventListener("click", (event) => {
+        if (
+          menuToggle.getAttribute("aria-expanded") === "true" &&
+          !mobileNav.contains(event.target) &&
+          !menuToggle.contains(event.target)
+        ) {
+          setMobileMenuOpen(false);
+        }
+      });
       const filters = document.querySelectorAll(".filter");
       const products = [...document.querySelectorAll(".product")];
       const searchInput = document.getElementById("searchInput");
