@@ -1,1143 +1,532 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luqman Website</title>
-
-    <!--
-    - favicon
-  -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ngopi Web menyediakan template website, source code, dan jasa pembuatan website untuk kebutuhan bisnis dan personal."
     />
-
-    <!--
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!--
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#111827" />
+    <title>Ngopi Web — Template, Source Code & Jasa Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body>
-    <!--
-    - #MAIN
-  -->
-
-    <main>
-      <!--
-      - #SIDEBAR
-    -->
-
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar-l.png"
-              alt="Richard hanrick"
-              width="80"
-            />
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Richard hanrick">Luqman Firdaus</h1>
-
-            <p class="title">Web Developer</p>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-        </div>
-
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:luqmanf900@gmail.com" class="contact-link"
-                  >luqmanf900@gmail.com</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281553333632"
-                  class="contact-link"
-                  >(+62) 815-5333-3632</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="logo-github"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Github</p>
-
-                <a href="https://github.com/mennn18" class="contact-link"
-                  >mennn18</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Kota Tangerang, Banten</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.facebook.com/luqman.firdaus.5245?mibextid=ZbWKwL"
-                class="social-link"
-              >
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="https://x.com/LuqmanFr_18?t=uerbgU7Ud9vXeB9Fuo_6QA&s=08"
-                class="social-link"
-              >
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="https://www.instagram.com/luqmanfr_?igshid=OGQ5ZDc2ODk2ZA=="
-                class="social-link"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!--
-      - #main-content
-    -->
-
-      <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
+    <div class="topbar">
+      Solusi digital untuk bisnis kamu —
+      <strong>mulai dari ide sampai website siap online.</strong>
+    </div>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#beranda" aria-label="Ngopi Web beranda"
+          ><span class="brand-mark">☕</span
+          ><span>NGOPI WEB<small>DIGITAL PRODUCTS & SOLUTIONS</small></span></a
+        >
+        <nav class="navlinks" aria-label="Navigasi utama">
+          <a href="#katalog">Katalog</a><a href="#layanan">Jasa Website</a
+          ><a href="#cara-beli">Cara Beli</a><a href="#kontak">Kontak</a>
         </nav>
-
-        <!--
-        - #ABOUT
-      -->
-
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              I am a web developer from Kota Tangerang, Banten. I have 1 year of
-              experience in back-end web development. I really enjoy what I do
-              right now, in my opinion, creating programs is not just a job, but
-              also an art that has aesthetic value
-            </p>
-
-            <p>
-              My job is to build your website to be functional and user-friendly
-              yet still attractive. In addition, I provide a personal touch to
-              your product and ensure that the website catches attention and is
-              easy to use. My goal is to convey your message and identity in the
-              most creative way. If you are interested in hiring me, please
-              contact the listed contact.
-            </p>
-          </section>
-
-          <!--
-          - service
-        -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
-
-                  <p class="service-item-text">
-                    The most modern and high-quality design made at a
-                    professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    High-quality development of sites at the professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                  <p class="service-item-text">
-                    Professional development of applications for iOS and
-                    Android.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
-
-                  <p class="service-item-text">
-                    I make high-quality photos of any category at a professional
-                    level.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!--
-          - testimonials
-        -->
-
-          <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-          <!--
-          - testimonials modal
-        -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!--
-          - clients
-        -->
-
-          <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-        </article>
-
-        <!--
-        - #RESUME
-      -->
-
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Sekolah Tinggi UNIVERSITAS PAMULANG
-                </h4>
-
-                <span>2023 — Present</span>
-
-                <p class="timeline-text">Sistem Informasi.</p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  SMK OTOMOTIF AL-HUSNA KOTA TANGERANG
-                </h4>
-
-                <span>2016 — 2017</span>
-
-                <p class="timeline-text">
-                  Teknik Kendaraan Ringan (TKR) & Layanan Otomotif .
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="briefcase-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Full-stack Developer</h4>
-
-                <span>2017 — 2020</span>
-
-                <p class="timeline-text">Bandar Pelumas Cipondoh.</p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Teknisi Car Engineer Maintenance
-                </h4>
-
-                <span>2020 — 2022</span>
-
-                <p class="timeline-text">Bandar Pelumas Ciledug.</p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Teknisi Spooring & Balance
-                </h4>
-
-                <span>2023 — Present</span>
-
-                <p class="timeline-text">CV. PITSTOP3 BSD.</p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
-
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Pemrograman Web</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Graphic design</h5>
-                  <data value="70">70%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Maintenance Engineer</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Web Design</h5>
-                  <data value="65">65%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 65%"></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #PORTFOLIO
-      -->
-
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web design</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-4.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Brawlhalla</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #BLOG
-      -->
-
-        <article class="blog" data-page="blog">
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
-          </header>
-
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-8.jpg"
-                      alt="Technical Car Maintenance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Teknisi</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2017-08-23">Aug 23, 2017</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Technical Car Maintenance
-                    </h3>
-
-                    <p class="blog-text">
-                      Periodic maintenance or service is an activity of
-                      adjusting, repairing, tightening, replacing parts on a
-                      vehicle that experience a decrease in performance which is
-                      carried out at certain time intervals on a regular basis.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-2.jpg"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Feb 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Design conferences in 2022
-                    </h3>
-
-                    <p class="blog-text">
-                      Conferences are about gathering information and knowledge
-                      but are also opportunities to meet and learn from other
-                      like-minded folks in the web design community. Plus,
-                      you’ll be exposed to a large amount of new information,
-                      which will help you to advance in your career.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-9.jpg"
-                      alt="Teknisi Spooring & Balancing"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Teknisi</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2023-11-01">Nov 01, 2023</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Teknisi Spooring & Balancing
-                    </h3>
-
-                    <p class="blog-text">
-                      In general, spooring is the process of adjusting the tilt
-                      of the wheel. Meanwhile, the definition of balancing is
-                      the process of smoothing the rotation of the wheels by
-                      equalizing the counterweight on the wheels.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-6.jpg"
-                      alt="Programmer Web"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Programmer</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2023-09-09">Sep 09, 2023</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Programmer Web</h3>
-
-                    <p class="blog-text">
-                      Programming is a profession that is in demand among young
-                      people today. On the other hand, this profession is
-                      considered to have future prospects. The words “cool” and
-                      “big salary” are often thrown at programmers. This is
-                      certainly very interesting, especially for those of you
-                      who want the sweet qualities of becoming a reliable
-                      programmer.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #CONTACT
-      -->
-
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.6481928413801!2d106.64455270157634!3d-6.185217355514339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTEnMDYuOSJTIDEwNsKwMzgnNDEuOSJF!5e0!3m2!1sid!2sid!4v1702658011474!5m2!1sid!2sid"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
-
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
-        </article>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Aktifkan mode gelap"
+          aria-pressed="false"
+          title="Aktifkan mode gelap"
+        >
+          <span aria-hidden="true">☾</span>
+        </button>
+        <a class="nav-cta" href="#katalog">Lihat Produk ↗</a>
       </div>
+    </header>
+    <main>
+      <section class="hero" id="beranda">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">Digital marketplace</div>
+            <h1>Website keren untuk ide <span>yang lebih besar.</span></h1>
+            <p>
+              Jelajahi template website, source code, dan layanan pembuatan
+              website. Pilih produk yang sesuai kebutuhanmu, lihat demonya, lalu
+              konsultasikan pembelian langsung melalui WhatsApp Sambil Ngopi!!!.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#katalog"
+                >Jelajahi Katalog <span>→</span></a
+              ><a class="btn light" href="#layanan">Lihat Layanan</a>
+            </div>
+            <div class="proof">
+              <span>✓ <b>Produk digital</b> beragam</span
+              ><span>✓ <b>Demo sebelum beli</b></span
+              ><span>✓ <b>Order via WhatsApp</b></span>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Pratinjau katalog website">
+            <div class="mock-window">
+              <div class="mock-top">
+                <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+                <div class="mock-url">ngopi-web.my.id/katalog</div>
+              </div>
+              <div class="mock-content">
+                <div class="mock-label">PILIHAN MINGGU INI</div>
+                <div class="mock-title">
+                  Temukan website<br />yang cocok buatmu.
+                </div>
+                <div class="mock-copy">
+                  Template siap dikembangkan untuk berbagai kebutuhan.
+                </div>
+                <div class="mock-tiles">
+                  <div class="mock-tile">
+                    <div class="tile-art coffee"></div>
+                    <div class="tile-name">Coffee Shop</div>
+                    <div class="tile-price">Mulai Rp299.000</div>
+                  </div>
+                  <div class="mock-tile">
+                    <div class="tile-art shop"></div>
+                    <div class="tile-name">Online Store</div>
+                    <div class="tile-price">Mulai Rp399.000</div>
+                  </div>
+                  <div class="mock-tile">
+                    <div class="tile-art corporate"></div>
+                    <div class="tile-name">Company Profile</div>
+                    <div class="tile-price">Mulai Rp349.000</div>
+                  </div>
+                  <div class="mock-tile">
+                    <div class="tile-art"></div>
+                    <div class="tile-name">Landing Page</div>
+                    <div class="tile-price">Mulai Rp199.000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="trust-strip">
+        <div class="container trust-grid">
+          <div class="trust-item">
+            <span class="trust-icon">⌘</span
+            ><span><b>Template Praktis</b>Awal proyek lebih cepat</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">{ }</span
+            ><span><b>Source Code</b>Untuk dikembangkan</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">↗</span
+            ><span><b>Jasa Website</b>Sesuai kebutuhan</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <img
+                class="wa-icon"
+                src="assets/images/WhatsApp.svg.webp"
+                alt=""
+              /> </span
+            ><span><b>Kontak Langsung</b>Konsultasi via WhatsApp</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="katalog">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="kicker">Katalog digital</div>
+              <h2>Temukan produk yang kamu butuhkan</h2>
+              <p>
+                Pilih kategori sambil ngopi atau cari nama produk untuk
+                menemukan solusi website yang tepat.
+              </p>
+            </div>
+            <label class="searchbox"
+              ><span>⌕</span
+              ><input
+                id="searchInput"
+                type="search"
+                placeholder="Cari template, source code..."
+                aria-label="Cari produk"
+            /></label>
+          </div>
+          <div class="filters" role="group" aria-label="Filter kategori">
+            <button class="filter active" data-filter="all">Semua Produk</button
+            ><button class="filter" data-filter="template">Template</button
+            ><button class="filter" data-filter="source">Source Code</button
+            ><button class="filter" data-filter="jasa">Jasa Website</button>
+          </div>
+          <div class="product-grid" id="productGrid">
+            <article
+              class="product"
+              data-category="template"
+              data-search="coffee shop restoran cafe makanan template website"
+            >
+              <div class="product-art restaurant">
+                <span class="badge">TEMPLATE</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Food & Beverage</span><span>HTML / CSS</span>
+                </div>
+                <h3>Template Website Coffee Shop</h3>
+                <p>
+                  Landing page kafe dengan bagian menu, cerita brand, galeri,
+                  dan kontak. Cocok untuk bisnis kuliner.
+                </p>
+                <div class="price-row">
+                  <div class="price">
+                    Rp299.000<small>Harga contoh — sesuaikan</small>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a
+                    class="btn light"
+                    href="#kontak"
+                    data-demo="Template Website Coffee Shop"
+                    >Tanya Demo</a
+                  ><button
+                    class="btn whatsapp buy-btn"
+                    data-product="Template Website Coffee Shop"
+                    data-price="Rp299.000"
+                  >
+                    Beli via WA
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product"
+              data-category="template"
+              data-search="toko online ecommerce shop fashion template"
+            >
+              <div class="product-art shop">
+                <span class="badge">TERLARIS</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>E-Commerce</span><span>HTML / CSS / JS</span>
+                </div>
+                <h3>Template Toko Online</h3>
+                <p>
+                  Tampilan katalog produk modern untuk brand fashion, aksesoris,
+                  atau produk retail.
+                </p>
+                <div class="price-row">
+                  <div class="price">
+                    Rp399.000<small>Harga contoh — sesuaikan</small>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a
+                    class="btn light"
+                    href="#kontak"
+                    data-demo="Template Toko Online"
+                    >Tanya Demo</a
+                  ><button
+                    class="btn whatsapp buy-btn"
+                    data-product="Template Toko Online"
+                    data-price="Rp399.000"
+                  >
+                    Beli via WA
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product"
+              data-category="template"
+              data-search="company profile perusahaan bisnis corporate"
+            >
+              <div class="product-art corporate">
+                <span class="badge">TEMPLATE</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Bisnis</span><span>Responsive</span>
+                </div>
+                <h3>Template Company Profile</h3>
+                <p>
+                  Profil perusahaan dengan bagian layanan, keunggulan,
+                  portofolio, dan informasi kontak.
+                </p>
+                <div class="price-row">
+                  <div class="price">
+                    Rp349.000<small>Harga contoh — sesuaikan</small>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a
+                    class="btn light"
+                    href="#kontak"
+                    data-demo="Template Company Profile"
+                    >Tanya Demo</a
+                  ><button
+                    class="btn whatsapp buy-btn"
+                    data-product="Template Company Profile"
+                    data-price="Rp349.000"
+                  >
+                    Beli via WA
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product"
+              data-category="template"
+              data-search="salon mobil detailing otomotif car wash template"
+            >
+              <div class="product-art auto">
+                <span class="badge">TEMPLATE</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Otomotif</span><span>Responsive</span>
+                </div>
+                <h3>Template Salon Mobil</h3>
+                <p>
+                  Website layanan detailing dengan daftar paket, galeri hasil
+                  pekerjaan, dan tombol booking.
+                </p>
+                <div class="price-row">
+                  <div class="price">
+                    Rp329.000<small>Harga contoh — sesuaikan</small>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a
+                    class="btn light"
+                    href="#kontak"
+                    data-demo="Template Salon Mobil"
+                    >Tanya Demo</a
+                  ><button
+                    class="btn whatsapp buy-btn"
+                    data-product="Template Salon Mobil"
+                    data-price="Rp329.000"
+                  >
+                    Beli via WA
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product"
+              data-category="source"
+              data-search="source code dashboard admin crud php javascript"
+            >
+              <div class="product-art dashboard">
+                <span class="badge">SOURCE CODE</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Developer Tools</span><span>Source Code</span>
+                </div>
+                <h3>Source Code Dashboard Admin</h3>
+                <p>
+                  Starter dashboard untuk latihan atau pengembangan proyek.
+                  Detail fitur dan teknologi dikonfirmasi sebelum pembelian.
+                </p>
+                <div class="price-row">
+                  <div class="price">
+                    Rp249.000<small>Harga contoh — sesuaikan</small>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a
+                    class="btn light"
+                    href="#kontak"
+                    data-demo="Source Code Dashboard Admin"
+                    >Tanya Detail</a
+                  ><button
+                    class="btn whatsapp buy-btn"
+                    data-product="Source Code Dashboard Admin"
+                    data-price="Rp249.000"
+                  >
+                    Beli via WA
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product"
+              data-category="source"
+              data-search="source code portfolio personal developer html css javascript"
+            >
+              <div class="product-art portfolio">
+                <span class="badge">SOURCE CODE</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Personal Branding</span><span>HTML / CSS / JS</span>
+                </div>
+                <h3>Source Code Portfolio Personal</h3>
+                <p>
+                  Struktur awal portofolio untuk menampilkan profil, keahlian,
+                  proyek, dan kontak developer.
+                </p>
+                <div class="price-row">
+                  <div class="price">
+                    Rp149.000<small>Harga contoh — sesuaikan</small>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a
+                    class="btn light"
+                    href="#kontak"
+                    data-demo="Source Code Portfolio Personal"
+                    >Tanya Detail</a
+                  ><button
+                    class="btn whatsapp buy-btn"
+                    data-product="Source Code Portfolio Personal"
+                    data-price="Rp149.000"
+                  >
+                    Beli via WA
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p id="noResults" class="empty" hidden>
+            Produk tidak ditemukan. Coba kata kunci atau kategori lain.
+          </p>
+        </div>
+      </section>
+
+      <section class="service-section" id="layanan">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="kicker">Layanan kami</div>
+              <h2>Butuh website yang dibuat khusus?</h2>
+              <p>
+                Ceritakan kebutuhanmu sambil Ngopi. Kita bisa diskusikan ruang
+                lingkup, fitur, waktu pengerjaan, dan biaya sebelum proyek
+                dimulai.
+              </p>
+            </div>
+          </div>
+          <div class="service-grid">
+            <article class="service">
+              <div class="service-icon">▤</div>
+              <h3>Website Company Profile</h3>
+              <p>
+                Website profesional untuk memperkenalkan bisnis, layanan,
+                portofolio, dan informasi kontak.
+              </p>
+              <a
+                href="#"
+                class="service-btn"
+                data-service="Jasa Website Company Profile"
+                >Konsultasi layanan →</a
+              >
+            </article>
+            <article class="service">
+              <div class="service-icon">▣</div>
+              <h3>Toko Online</h3>
+              <p>
+                Katalog produk, halaman detail, dan alur pemesanan sesuai
+                kebutuhan bisnis kamu.
+              </p>
+              <a
+                href="#"
+                class="service-btn"
+                data-service="Jasa Pembuatan Toko Online"
+                >Konsultasi layanan →</a
+              >
+            </article>
+            <article class="service">
+              <div class="service-icon">{ }</div>
+              <h3>Custom Website & Sistem</h3>
+              <p>
+                Pengembangan website atau aplikasi dengan fitur yang dirancang
+                berdasarkan kebutuhan proyek.
+              </p>
+              <a
+                href="#"
+                class="service-btn"
+                data-service="Jasa Custom Website dan Sistem"
+                >Konsultasi layanan →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cara-beli">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="kicker">Mudah dan transparan</div>
+              <h2>Bagaimana cara membeli?</h2>
+              <p>
+                Hubungi kami sebelum transaksi untuk memastikan demo, fitur,
+                lisensi, dan detail produk.
+              </p>
+            </div>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <div class="step-num">LANGKAH 01</div>
+              <h3>Pilih produk</h3>
+              <p>
+                Temukan template atau source code yang sesuai. Baca deskripsi
+                dan tanyakan demo bila diperlukan.
+              </p>
+            </article>
+            <article class="step">
+              <div class="step-num">LANGKAH 02</div>
+              <h3>Chat WhatsApp</h3>
+              <p>
+                Klik tombol beli. Pesan awal akan terisi otomatis dengan nama
+                produk yang dipilih.
+              </p>
+            </article>
+            <article class="step">
+              <div class="step-num">LANGKAH 03</div>
+              <h3>Konfirmasi & terima produk</h3>
+              <p>
+                Konfirmasi harga, lisensi, metode pembayaran, serta cara
+                penyerahan produk dengan penjual.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak" style="padding-top: 0">
+        <div class="container">
+          <div class="cta">
+            <div>
+              <h2>Punya ide website?<br />Mari kita wujudkan.</h2>
+              <p>
+                Konsultasikan kebutuhan template, source code, atau website
+                custom bersama Ngopi Web.
+              </p>
+            </div>
+            <a class="btn primary" id="contactBtn" href="#"
+              >Chat Ngopi Web via WhatsApp ↗</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-
-    <!--
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <footer>
+      <div class="container footer-row">
+        <a class="brand" href="#beranda"
+          ><span class="brand-mark">☕</span
+          ><span>NGOPI WEB<small>DIGITAL PRODUCTS & SOLUTIONS</small></span></a
+        >
+        <div class="footer-copy">
+          © <span id="year"></span> Ngopi Web. Produk dan harga pada halaman ini
+          merupakan contoh yang perlu disesuaikan.
+        </div>
+        <div class="footer-links">
+          <a href="#katalog">Katalog</a><a href="#layanan">Layanan</a
+          ><a href="#kontak">Kontak</a>
+        </div>
+      </div>
+    </footer>
+    <a class="wa-float" id="floatWa" href="#" aria-label="Chat WhatsApp">
+      <img class="wa-icon" src="assets/images/WhatsApp.svg.webp" alt="" />
+    </a>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
