@@ -15,7 +15,7 @@
       :root[data-theme="dark"] {
         color-scheme: dark;
         --ink: #edf1f7;
-        --muted: #a7b1c2;
+        --muted: #b8c2d1;
         --bg: #10151f;
         --card: #1a2230;
         --surface: #171e2a;
@@ -115,6 +115,41 @@
         font-size: 14px;
         color: #485368;
       }
+      .menu-toggle {
+        display: none;
+        width: 40px;
+        height: 40px;
+        padding: 9px;
+        flex: 0 0 40px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--card);
+        cursor: pointer;
+      }
+      .menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 2px;
+        background: var(--ink);
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+      .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+      .menu-toggle:focus-visible {
+        outline: 3px solid var(--brand);
+        outline-offset: 3px;
+      }
       .theme-toggle {
         width: 40px;
         height: 40px;
@@ -174,6 +209,9 @@
       :root[data-theme="dark"] .navlinks {
         color: #c3ccda;
       }
+      :root[data-theme="dark"] .brand small {
+        color: #b8c2d1;
+      }
       .nav-cta,
       .btn {
         display: inline-flex;
@@ -219,6 +257,11 @@
         background:
           radial-gradient(circle at 85% 15%, rgba(183, 121, 66, 0.16), transparent 30%),
           linear-gradient(135deg, #171e2a 0%, #10151f 78%);
+      }
+      :root[data-theme="dark"] .eyebrow {
+        background: #352a20;
+        color: #f1c18e;
+        border-color: #62472f;
       }
       .hero-grid {
         display: grid;
@@ -277,7 +320,7 @@
         font-size: 12px;
       }
       :root[data-theme="dark"] .proof {
-        color: #a7b1c2;
+        color: #c0cad8;
       }
       .proof span {
         display: flex;
@@ -286,6 +329,9 @@
       }
       .proof b {
         color: #283449;
+      }
+      :root[data-theme="dark"] .proof b {
+        color: var(--ink);
       }
       .hero-visual {
         background: var(--dark);
@@ -298,6 +344,27 @@
         background: #fff;
         border-radius: 16px;
         overflow: hidden;
+      }
+      :root[data-theme="dark"] .mock-window {
+        background: #1a2230;
+        color: var(--ink);
+      }
+      :root[data-theme="dark"] .mock-url {
+        background: #293446;
+        color: #d0d8e4;
+      }
+      :root[data-theme="dark"] .mock-label {
+        color: #f0bd87;
+      }
+      :root[data-theme="dark"] .mock-copy {
+        color: #c0cad8;
+      }
+      :root[data-theme="dark"] .mock-tile {
+        background: #202a39;
+        border-color: #3b485a;
+      }
+      :root[data-theme="dark"] .tile-price {
+        color: #f0bd87;
       }
       .mock-top {
         height: 40px;
@@ -627,7 +694,7 @@
       :root[data-theme="dark"] .product-meta,
       :root[data-theme="dark"] .price small,
       :root[data-theme="dark"] .footer-copy {
-        color: #a7b1c2;
+        color: #b8c2d1;
       }
       .product h3 {
         font-size: 17px;
@@ -704,6 +771,10 @@
         color: #8b552e;
         font-size: 21px;
         font-weight: 900;
+      }
+      :root[data-theme="dark"] .service-icon {
+        background: #3a2d22;
+        color: #f1c18e;
       }
       .service h3 {
         margin: 16px 0 7px;
@@ -1009,12 +1080,49 @@
         .nav {
           height: 66px;
           gap: 10px;
+          position: relative;
         }
         .navlinks {
           display: none;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          left: 0;
+          z-index: 21;
+          align-items: stretch;
+          flex-direction: column;
+          gap: 0;
+          padding: 8px;
+          border: 1px solid var(--line);
+          border-radius: 0 0 14px 14px;
+          background: var(--surface);
+          box-shadow: var(--shadow);
+          color: var(--ink);
+        }
+        .navlinks.is-open {
+          display: flex;
+        }
+        .navlinks a {
+          padding: 12px;
+          border-radius: 8px;
+        }
+        .navlinks a:hover,
+        .navlinks a:focus-visible {
+          background: var(--bg);
+          transform: none;
+        }
+        .navlinks a::after {
+          display: none;
+        }
+        .menu-toggle {
+          display: flex;
+          width: 36px;
+          height: 36px;
+          flex-basis: 36px;
+          border-radius: 10px;
         }
         .nav-cta {
-          padding: 9px 12px;
+          display: none;
         }
         .theme-toggle {
           width: 36px;
